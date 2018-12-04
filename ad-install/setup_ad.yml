@@ -9,9 +9,9 @@
   - name: Check Linux servers
     ping:
     when: ansible_distribution != "Microsoft Windows Server 2012 R2 Standard"
-  - tags:
-      - pingtest
-      
+  tags:
+    - pingtest
+
 - name: setup ad
   hosts: windows
   gather_facts: false
