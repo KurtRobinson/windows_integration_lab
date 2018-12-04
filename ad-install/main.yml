@@ -3,6 +3,8 @@
 
 - name: check win server
   hosts: all
+  gather_facts: false
+  become: true
   
   tasks:
   - name: Check Windows server
