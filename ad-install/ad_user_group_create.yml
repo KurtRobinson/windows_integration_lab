@@ -4,7 +4,6 @@
 - name: add ad users
   hosts: windows
   vars_files: 
-    - ./main.yml
+    - ./roles/win_ad_user/vars/main.yml
   roles:
     - win_ad_user
-    
