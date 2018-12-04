@@ -5,6 +5,4 @@
   hosts: windows
   gather_facts: false
   roles:
-    - win-ad-install
-
-
+    - win_ad_install
