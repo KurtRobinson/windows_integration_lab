@@ -6,9 +6,8 @@
     name: AD-Domain-Services
     state: present
 
-    
+
 - name: reboot windows
   win_reboot:
-
 
   
