@@ -1,0 +1,9 @@
+---
+# win_ssh_server yml
+
+- name: setup win ssh server
+  hosts: windows
+  vars_files: 
+    - ./ssh_var.yml
+  roles:
+    - win_service_config
