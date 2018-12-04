@@ -1,7 +1,9 @@
 ---
 # main yml
 
-- hosts: all
+- name: check win server
+  hosts: all
+  
   tasks:
   - name: Check Windows server
     win_ping:
