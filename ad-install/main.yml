@@ -1,0 +1,18 @@
+---
+# main yml
+
+- hosts: all
+  tasks:
+  - name: Check Windows server
+    win_ping:
+    when: ansible_distribution == "Microsoft Windows Server 2012 R2 Standard"
+  tags:
+    - tag: testping
+
+- name: ad controller
+  hosts: windows
+  gather_facts: true
+  become: true
+  roles:
+    - role: win_ad_install
+

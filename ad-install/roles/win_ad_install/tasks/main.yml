@@ -1,0 +1,14 @@
+---
+# tasks file for win_ad_install
+
+- name: install ad domain services
+  win_feature:
+    name: AD-Domain-Services
+    state: present
+
+    
+- name: reboot windows
+  win_reboot:
+
+
+  
