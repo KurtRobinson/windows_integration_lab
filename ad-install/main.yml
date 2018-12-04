@@ -1,10 +1,10 @@
 ---
 # main yml
 
-- name: ad controller
+- name: setup ad controller
   hosts: windows
-  gather_facts: true
+  gather_facts: false
   become: true
   roles:
-    - role: win_ad_install
+    - role: win-ad-install
 
