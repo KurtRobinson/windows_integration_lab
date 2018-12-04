@@ -1,0 +1,10 @@
+---
+# win_ad_user yml
+
+- name: add ad users
+  hosts: windows
+  vars_files: 
+    - ./main.yml
+  roles:
+    - win_ad_user
+    
