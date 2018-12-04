@@ -4,7 +4,7 @@
 - name: setup ad
   hosts: windows
   gather_facts: false
-  become: true
   roles:
-    - role: win-ad-install
+    - win-ad-install
+
 
